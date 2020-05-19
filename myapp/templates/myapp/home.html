@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="jumbotron jumbotron-fluid">
+    <div class="container">
+      <h1 class="display-4">Hello {{myuser.user.username}}</h1>
+      <p class="lead">First name:{{myuser.user.first_name}}</p>
+      <p class="lead">Last name:{{myuser.user.last_name}}</p>
+      <p class="lead">Email :{{myuser.user.email}}</p>
+      <p class="lead">Hashed Password ::{{myuser.user.password}} </p>
+      <p class="lead">Age :{{myuser.Age}} </p>
+      <p class="lead">Phone Number :{{myuser.PhoneNumber}} </p>
+      <p class="lead">Address :{{myuser.Address}} </p>
+      <p class="lead">city :{{myuser.City}} </p>
+
+
+    </div>
+  </div>
+{% endblock %}
